@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b8e994;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.loader-container {
+    display: none;
+}
+.details {
+    text-align: center;
+}
+
+.loader {
+    width: 8px;
+    height: 35px;
+    background: black;
+    margin: 3px;
+}
+
+.loader1 {
+    animation: loading 1s ease infinite ;
+}
+
+.loader2 {
+    animation: loading 2s ease infinite 1s;
+}
+
+.loader3 {
+    animation: loading 3s ease infinite 1.6s;
+}
+
+.main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ip-display,
+.location-display,
+.Geolocation-display {
+    color: royalblue;
+    margin: 0.5rem;
+    font-size:larger;
+    font-weight: 800;
+}
+
+.lookup-button {
+    border: none;
+    background: #353b48;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+
+.lookup-button:hover {
+    opacity: 0.8;
+}
+
+@keyframes loading {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.6);
+    }
+}
